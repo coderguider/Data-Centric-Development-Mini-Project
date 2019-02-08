@@ -93,6 +93,9 @@ def insert_category():
 def add_category():
     return render_template('addcategory.html')
     
+@app.route('/new_category')
+def new_category():
+    return render_template('addcategory.html')
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
